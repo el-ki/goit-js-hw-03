@@ -132,6 +132,9 @@ console.log(account.getTransactionTotal(Transaction.DEPOSIT));
 console.log(account.getTransactionTotal(Transaction.WITHDRAW));
 console.table(account.transactions);
 
+account.withdraw('svfb');
+console.log(account.getBalance());
+
 const transactionId = account.transactions[0].id;
 console.log(account.getTransactionDetails(transactionId));
 	
